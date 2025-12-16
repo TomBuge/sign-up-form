@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Norse";
+    src:
+        url(fonts/Norse-Bold.woff2) format("woff2"),
+        url(fonts/Norse.woff) format("woff");
+    font-display: swap;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 35%;
+    background: url(images/background.jpg) center / cover no-repeat;
+    height: 100vh;
+    position: relative;
+
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    background-color: rgb(0 0 0 / 50%);
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    max-height: 80%;
+    max-width: auto;
+}
+
+.logo {
+    font-size: 100px;
+    color: white;
+    font-family: "Norse";
+}
+
+.main {
+    width : 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.top {
+   background-color: #fafafa;
+   padding: 130px 40px 60px;
+}
+
+h1, h2, .top p {
+    font-size: 28px;
+    max-width: 900px;
+    font-weight: 900;
+}
+
+.footer {
+    padding: 50px 40px;
+    background-color: #fafafa;
+    height: 100%;
+    position: relative;
+   
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.middle {
+    padding: 30px 100px 40px 40px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    padding: 8px 40px;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+.footer a {
+   text-decoration: none; 
+   color: #596D48;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.column-right, .column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input {
+    min-width: 300px;
+    font-size: 20px;
+    padding: 3px 0;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+
